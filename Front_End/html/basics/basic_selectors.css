@@ -1,0 +1,229 @@
+/* Basic-Selectors */
+
+/* use of * selector */
+
+* {
+ margin: 0;
+ padding: 0;
+}
+
+/*  The * can alsobe used child-selsctors */ 
+#container * {
+ border: 1px solid black;
+}
+
+/*  use of #X selecor */
+
+#container {
+   width: 960px;
+   margin: auto;
+}
+
+
+
+/*  use of .X selecor */
+.error {
+  color: red;
+}
+
+
+/*  use of X selecor */
+a { color: red; }
+ul { margin-left: 0; }
+
+
+
+/*  use of X Y selecor */
+li a {
+  text-decoration: none;
+}
+
+
+/*  use of X + Y selecor */
+ul + p {
+   color: red;
+}
+
+
+/*  use of X > Y selecor */
+div#container > ul {
+  border: 1px solid black;
+}
+
+
+/*  use of X ~ Y selecor */
+ul ~ p {
+   color: red;
+}
+
+
+/* Attributes Selectors */
+
+/* use of  X[title] */
+a[title] {
+   color: green;
+}
+
+
+/* use of  X[href="foo"]*/
+a[href="https://webdesign.tutsplus.com"] {
+  color: #83b348; /* Envato green */
+}
+
+
+
+/* use of  X[href*="foo"]*/
+a[href*="tutsplus"] {
+  color: #83b348; /* Envato green */
+}
+
+
+/* use of  X[href^="https"] */
+a[href^="https"] {
+   background: url(path/to/external/icon.png) no-repeat;
+   padding-left: 10px;
+}
+
+
+
+/* use of  X[href$=".jpg"] */
+a[href$=".jpg"] {
+   color: red;
+}
+
+
+/* X[data-*="foo"] */
+a[data-filetype="image"] {
+   color: red;
+}
+
+
+
+/* X[foo~="bar"] */
+ a[data-info~="external"] {
+   color: red;
+}
+a[data-info~="image"] {
+   border: 1px solid black;
+}
+
+
+/* Pseudo Selectors */
+/* Use of X:visited and X:link */
+a:link { color: red; }
+a:visited { color: purple; }
+
+
+/* Use of X:checked */
+input[type=radio]:checked {
+   border: 1px solid black;
+}
+
+
+/* Use of X::after */
+p::after {
+    content: "some text string";
+    display: block;
+    }
+
+/* Use of X:hover */
+    div:hover {
+  background: #e3e3e3;
+}
+
+a:hover {
+ border-bottom: 1px solid black;
+}
+
+
+
+/* Use of X:not(selector) */
+div:not(#container) {
+   color: blue;
+}
+
+*:not(p) {
+  color: green;
+}
+
+
+/* Use of X::pseudoElement */
+p::first-line {
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+p::first-letter {
+   float: left;
+   font-size: 2em;
+   font-weight: bold;
+   font-family: cursive;
+   padding-right: 2px;
+}
+
+p::first-line {
+   font-weight: bold;
+   font-size: 1.2em;
+}
+
+
+/* Nth Child and Type Selectors */
+
+
+/* Use of X:nth-child(n) */
+li:nth-child(3) {
+   color: red;
+}
+
+
+/* Use of  X:nth-last-child(n) */
+li:nth-last-child(2) {
+   color: red;
+}
+
+
+/* Use of X:nth-of-type(n) */
+ul:nth-of-type(3) {
+   border: 1px solid black;
+}
+
+
+/* Use of X:nth-last-of-type(n) */
+ul:nth-last-of-type(3) {
+   border: 1px solid black;
+}
+
+
+/* Use of X:first-child */
+ul li:first-child {
+   border-top: none;
+}
+
+
+/* Use of X:last-child */
+ul > li:last-child {
+   color: green;
+}
+
+li:first-child {
+    border-top: none;
+}
+li:last-child {
+   border-bottom: none;
+}
+
+
+/* X:only-child */
+div p:only-child {
+   color: red;
+}
+
+
+/* Use of X:only-of-type */
+li:only-of-type {
+   font-weight: bold;
+}
+
+
+/* Use of X:first-of-type */
+

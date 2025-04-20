@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stock Market Portfolio</title>
+        <link rel="stylesheet" href="styles.css" />
+        <!-- Chart.js CDN -->
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <aside class="stock-list" id="stockList"></aside>
+            <main class="main-content">
+                <section class="chart-section">
+                    <div class="range-buttons">
+                        <button data-range="1m">1 Month</button>
+                        <button data-range="3m">3 Months</button>
+                        <button data-range="1y">1 Year</button>
+                        <button data-range="5y">5 Years</button>
+                    </div>
+                    <canvas id="stockChart"></canvas>
+                    <div class="peak-low">
+                        <span id="peakValue">Peak: --</span>
+                        <span id="lowValue">Low: --</span>
+                    </div>
+                </section>
+                <section class="details-section" id="stockDetails"></section>
+            </main>
+        </div>
+        <script type="module" src="app.js"></script>
+    </body>
+</html>
